@@ -1,17 +1,17 @@
 body {
 	background-color: #FFFAA0;
-
 	font-size: 16px;
 
 	display: flex;
+	flex-direction: column;   /* add this */
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	margin: 0;
 
-    background-image: radial-gradient(circle, #FFD1DE 40%, transparent 0%);
-    background-size: 60px 60px; /* dot spacing */
-    animation: moveDots 3s linear infinite;
+	background-image: radial-gradient(circle, #FFD1DE 40%, transparent 0%);
+	background-size: 60px 60px;
+	animation: moveDots 3s linear infinite;
 }
 
 @keyframes moveDots {
@@ -30,7 +30,7 @@ body {
 	text-align: center;
 	font-family: "SN Pro", "Times New Roman", Arial;
     color: pink;
-    font-size: 32px;
+    font-size: 48px;
     -webkit-text-stroke: 12px white;
     paint-order: stroke fill;
 }
@@ -47,4 +47,11 @@ body {
 
 .content {
 	width: 500px;
+}
+
+.img-logo {
+    width: 15%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
 }
