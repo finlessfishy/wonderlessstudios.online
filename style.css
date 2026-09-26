@@ -9,7 +9,7 @@ body {
 	min-height: 100vh;
 	margin: 0;
 
-    background-image: radial-gradient(circle, #FFC5D3 40%, transparent 21%);
+    background-image: radial-gradient(circle, #FFD1DE 40%, transparent 0%);
     background-size: 60px 60px; /* dot spacing */
     animation: moveDots 3s linear infinite;
 }
@@ -29,8 +29,10 @@ body {
 .heading {
 	text-align: center;
 	font-family: "SN Pro", "Times New Roman", Arial;
-    color: white;
+    color: pink;
     font-size: 32px;
+    -webkit-text-stroke: 12px white;
+    paint-order: stroke fill;
 }
 
 .centered {
