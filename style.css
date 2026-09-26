@@ -47,6 +47,14 @@ body {
 	gap: 80px;
 }
 
+.hovergrow {
+	transition: transform 0.3s ease-in-out;
+}
+
+.hovergrow:hover {
+	transform: scale(1.1); 
+}
+
 .content {
 	width: 500px;
 }
@@ -60,4 +68,18 @@ body {
 
 img {
   border-radius: 48px;
+}
+
+.a-txt-float {
+	display: inline-block;
+	animation: txtfloatidle 3s ease-in-out infinite;
+}
+
+@keyframes txtfloatidle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
