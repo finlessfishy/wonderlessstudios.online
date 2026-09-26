@@ -22,8 +22,10 @@ body {
 .font {
 	text-align: center;
 	font-family: "SN Pro", "Times New Roman", Arial;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 6px white;
+    paint-order: stroke fill;
     color: pink;
+    font-size: 24px;
 }
 
 .heading {
@@ -42,7 +44,7 @@ body {
 .layout {
 	display: flex;
 	align-items: center;
-	gap: 40px;
+	gap: 80px;
 }
 
 .content {
@@ -54,4 +56,8 @@ body {
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
+}
+
+img {
+  border-radius: 48px;
 }
