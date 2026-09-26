@@ -1,0 +1,48 @@
+body {
+	background-color: #FFFAA0;
+
+	font-size: 16px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+
+    background-image: radial-gradient(circle, #FFC5D3 40%, transparent 21%);
+    background-size: 60px 60px; /* dot spacing */
+    animation: moveDots 3s linear infinite;
+}
+
+@keyframes moveDots {
+    from { background-position: 0 0; }
+    to   { background-position: 60px 60px; }
+}
+
+.font {
+	text-align: center;
+	font-family: "SN Pro", "Times New Roman", Arial;
+    -webkit-text-stroke: 1px white;
+    color: pink;
+}
+
+.heading {
+	text-align: center;
+	font-family: "SN Pro", "Times New Roman", Arial;
+    color: white;
+    font-size: 32px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.layout {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.content {
+	width: 500px;
+}
