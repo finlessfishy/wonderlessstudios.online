@@ -14,6 +14,16 @@ body {
 	animation: moveDots 3s linear infinite;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  /* Force any accidental layout leaks to stay hidden instead of stretching the screen */
+  overflow-x: hidden; 
+  /* Prevents mobile browsers from triggering horizontal bounce/swipe animations */
+  overscroll-behavior-x: none; 
+}
+
+
 @keyframes moveDots {
     from { background-position: 0 0; }
     to   { background-position: 60px 60px; }
