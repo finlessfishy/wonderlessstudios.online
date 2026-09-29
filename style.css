@@ -16,11 +16,6 @@ body {
 
 html, body {
   width: 100%;
-  max-width: 100%;
-  /* Force any accidental layout leaks to stay hidden instead of stretching the screen */
-  overflow-x: hidden; 
-  /* Prevents mobile browsers from triggering horizontal bounce/swipe animations */
-  overscroll-behavior-x: none; 
 }
 
 
@@ -53,8 +48,13 @@ html, body {
 
 .layout {
 	display: flex;
+	flex-wrap: wrap;            /* items drop to the next line instead of overflowing */
+	justify-content: center;
 	align-items: center;
-	gap: 80px;
+	gap: 40px 80px;             /* row-gap column-gap */
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 0 16px;
 }
 
 .hovergrow {
@@ -92,4 +92,19 @@ img {
   50% {
     transform: translateY(-8px);
   }
+}
+body {
+	box-sizing: border-box;
+	padding: 16px;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 48px;
+}
+
+.heading {
+	font-size: clamp(28px, 8vw, 48px);
+	-webkit-text-stroke: clamp(6px, 2vw, 12px) white;
+	overflow-wrap: anywhere;    /* stops long headings from forcing the page wider */
 }
